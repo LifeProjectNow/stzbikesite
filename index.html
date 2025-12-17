@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>STZ BIKE Sertãozinho | Bicicletas Montadas e com Garantia | Ofertas Aro 29</title>
+    <meta name="description" content="Procurando Loja de Bicicleta em Sertãozinho? A STZ Bike tem Bicicleta Aro 29 barata, Bike Viking e peças Shimano. Entrega montada e regulada com garantia de balcão. Confira a oferta da semana!">
+    <meta name="keywords" content="bicicleta sertãozinho, bike aro 29, oficina de bicicleta, shimano, bike viking, stz bike">
+    <meta property="og:title" content="STZ BIKE- A Única com Entrega Técnica Grátis em Sertãozinho e Região">
+    <meta property="og:description" content="Não compre gato por lebre! Se presenteie ou presenteie alguém hoje mesmo, com a Bike dos Sonhos!">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1531326233718-4a6cf4bfbe6e?q=80&w=1200&auto=format&fit=crop">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'stz-green': '#5eb319', // Verde extraído do logo aproximado
+                        'stz-dark': '#0a0a0a',
+                        'urgent-red': '#dc2626',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        
+        /* Animações VORTEX */
+        .reveal-on-scroll { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+        .is-visible { opacity: 1; transform: translateY(0); }
+        
+        .pulse-urgent { animation: pulse-red 2s infinite; }
+        @keyframes pulse-red {
+            0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(220, 38, 38, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+        }
+
+        .strike-diagonal { position: relative; display: inline-block; }
+        .strike-diagonal::after {
+            content: ''; position: absolute; top: 50%; left: 0; width: 100%; height: 2px;
+            background: #ef4444; transform: rotate(-12deg);
+        }
+
+        /* Toast Notification Styles */
+        .social-toast {
+            position: fixed; bottom: 20px; left: 20px; background: white; 
+            padding: 12px 16px; border-radius: 8px; border-left: 4px solid #5eb319;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15); z-index: 50;
+            transform: translateX(-150%); transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex; align-items: center; gap: 12px; max-width: 300px;
+        }
+        .social-toast.active { transform: translateX(0); }
+
+        /* Mobile Sticky Button */
+        .mobile-sticky-btn {
+            position: fixed; bottom: 0; left: 0; width: 100%; background: #25D366;
+            color: white; padding: 15px; text-align: center; font-weight: bold;
+            font-size: 1.1rem; z-index: 100; box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+            transform: translateY(100%); transition: transform 0.3s ease;
+            display: flex; justify-content: center; align-items: center; gap: 8px;
+        }
+        .mobile-sticky-btn.visible { transform: translateY(0); }
+
+        @media(min-width: 768px) { .mobile-sticky-btn { display: none; } }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden">
+
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <img src="https://i.ibb.co/W1KY703/LOGO-SITE-STZ.png" alt="STZ Bike Logo" class="h-12 md:h-16 w-auto object-contain">
+            </div>
+            
+            <nav class="hidden md:flex gap-6 text-sm font-semibold text-gray-700">
+                <a href="#oferta" class="hover:text-stz-green transition">OFERTA RELÂMPAGO</a>
+                <a href="#garantia" class="hover:text-stz-green transition">PORQUE A STZ BIKE?</a>
+                <a href="#categorias" class="hover:text-stz-green transition">CATEGORIAS</a>
+                <a href="#localizacao" class="hover:text-stz-green transition">LOCALIZAÇÃO</a>
+            </nav>
+
+            <a href="https://wa.me/5516997904123?text=Ol%C3%A1!%20Vim%20pelo%20Google%20e%20estou%20procurando%20uma%20bicicleta%20e%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20por%20gentileza..." target="_blank" class="hidden md:flex bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-bold transition items-center gap-2 shadow-lg">
+                <i class="ph ph-whatsapp-logo text-xl"></i>
+            </a>
+        </div>
+    </header>
+
+    <section class="relative bg-stz-dark text-white pt-12 pb-20 md:pt-24 md:pb-32 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1576435728678-38d01d52e38b?q=80&w=1920&auto=format&fit=crop" alt="Ciclista em trilha" class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-b from-stz-dark/90 via-stz-dark/70 to-gray-50/100"></div>
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10 text-center max-w-4xl">
+            <span class="inline-block py-1 px-3 rounded-full bg-stz-green/20 border border-stz-green text-stz-green font-bold text-xs md:text-sm mb-6 tracking-wide uppercase">
+                📍 Exclusivo para moradores de Sertãozinho e Região
+            </span>
+            
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 reveal-on-scroll">
+                NÃO COMPRE <span class="text-stz-green">GATO POR LEBRE.</span><br>
+                A ÚNICA LOJA QUE ENTREGA SUA BIKE <span class="bg-stz-green text-white px-2">PRONTA PRA SEU DESEJO E NECESSIDADE!</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed reveal-on-scroll">
+                Pare de arriscar seu dinheiro em bicicletas de internet que chegam desmontadas na caixa e sem garantia real. Na <strong>STZ BIKE</strong>, você economiza o mecânico, tem garantia de balcão e sai pedalando na hora.
+            </p>
+            
+<div class="flex flex-col md:flex-row justify-center gap-4 reveal-on-scroll">
+    <a href="javascript:void(0)" onclick="smoothScrollTo('#oferta')" class="bg-urgent-red hover:bg-red-700 text-white text-lg md:text-xl font-bold py-4 px-8 rounded-lg shadow-2xl transition transform hover:scale-105 pulse-urgent flex items-center justify-center gap-3">
+        🔴 QUERO VER AS BICICLETAS AGORA
+    </a>
+</div>
+<p class="mt-4 text-sm text-gray-900 font-bold flex items-center justify-center gap-2">
+    <span><i class="ph-fill ph-check-circle text-green-600"></i> Garantia de Montagem Grátis</span>
+    <span class="text-gray-300">•</span>
+    <span><i class="ph-fill ph-check-circle text-green-600"></i> Loja Física no Centro</span>
+</p>  
+</section>
+
+<section id="oferta" class="py-16 bg-white -mt-10 relative z-20 rounded-t-3xl border-t border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-200">
+                <div class="grid md:grid-cols-2">
+                    <div class="bg-gray-100 relative w-full aspect-[4/5] md:aspect-auto md:h-full flex items-center justify-center overflow-hidden">
+                        <div class="absolute top-4 left-4 bg-[#E21E1E] text-white font-bold px-3 py-1 rounded text-sm z-10 shadow-md">OFERTA RELÂMPAGO</div>
+                        
+                        <img src="https://i.ibb.co/fY4XqQJX/Untitled-design-1.webp" 
+                             alt="Bicicleta Aro 29 Modelo Play" 
+                             class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-8 md:p-12 flex flex-col justify-center">
+                        <h2 class="text-3xl font-black text-gray-900 mb-2"> LANÇAMENTO - MODELO PLAY 🔥</h2>
+                        <p class="text-gray-500 font-medium mb-6">A Bicicleta Aro 29 Barata com + de 10 Cores que Você Procurava (Sem Pegadinhas)</p>
+                        
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-start gap-3">
+                                <i class="ph-fill ph-check-circle text-stz-green text-xl mt-1"></i>
+                                <p class="text-sm text-gray-600"><strong>Câmbio 21 Marchas Indexadas:</strong> Trocas precisas, adeus corrente caindo.</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="ph-fill ph-check-circle text-stz-green text-xl mt-1"></i>
+                                <p class="text-sm text-gray-600"><strong>Freios a Disco Mecânico:</strong> Segurança total em descidas e chuva.</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="ph-fill ph-check-circle text-stz-green text-xl mt-1"></i>
+                                <p class="text-sm text-gray-600"><strong>Cubos de Rolamento:</strong> Rodagem suave e resistente.</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="ph-fill ph-check-circle text-stz-green text-xl mt-1"></i>
+                                <p class="text-sm text-gray-600"><strong>Quadro em Alumínio:</strong> Leveza e design moderno.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-lg border border-stz-green/30 text-center mb-6">
+                            <p class="text-gray-500 text-sm font-semibold mb-1 uppercase">Preço Exclusivo Online</p>
+                            <div class="flex items-center justify-center gap-4 mb-2">
+                                <span class="text-gray-400 text-xl font-bold strike-diagonal">R$ 1.170,00</span>
+                                <span class="text-4xl md:text-5xl font-black text-stz-green">R$ 899,00</span>
+                            </div>
+                            <p class="text-sm text-gray-600 font-medium">À vista no PIX ou parcele em até <strong>12x de R$95 no cartão de crédito</strong>.</p>
+                        </div>
+
+                        <div class="text-center text-urgent-red font-bold text-sm mb-6 flex justify-center items-center gap-2">
+                            <i class="ph ph-alarm text-xl"></i>
+                            A oferta encerra em: <span id="countdown-timer" class="font-mono text-lg">00:00:00</span>
+                        </div>
+
+                        <a href="https://wa.me/5516997904123?text=Ol%C3%A1!%20Quero%20garantir%20o%20pre%C3%A7o%20da%20Bicicleta%20PLAY%20de%20R$899%20antes%20que%20acabe..." target="_blank" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-lg shadow-lg text-center transition flex items-center justify-center gap-2">
+                            <i class="ph ph-whatsapp-logo text-2xl"></i>
+                            GARANTIR ESSE PREÇO AGORA
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="garantia" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+                <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-4">3 MOTIVOS PARA NÃO COMPRAR NA INTERNET <br><span class="text-stz-green">(E VIR PARA A STZ BIKE)</span></h2>
+                <div class="h-1 w-20 bg-stz-green mx-auto rounded"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition reveal-on-scroll border-t-4 border-stz-green">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="ph ph-wrench text-3xl text-stz-green"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3">A Falsa Economia da "Caixa"</h3>
+                    <p class="text-gray-600 text-center text-sm leading-relaxed">
+                        Na internet, a bike chega desmontada. Você gasta ~R$ 150 com mecânico ou monta errado. <strong class="text-gray-900">Aqui, a Entrega Técnica é Grátis.</strong> Sai revisada, lubrificada e ajustada pra você.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition reveal-on-scroll border-t-4 border-stz-green" style="transition-delay: 100ms;">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="ph ph-handshake text-3xl text-stz-green"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3">Garantia de Balcão</h3>
+                    <p class="text-gray-600 text-center text-sm leading-relaxed">
+                        Deu problema? Nada de e-mails para robôs. <strong class="text-gray-900">Nossa garantia é olho no olho.</strong> Você traz a bike na Rua Washington Luis e resolvemos o problema, geralmente em 48h.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition reveal-on-scroll border-t-4 border-stz-green" style="transition-delay: 200ms;">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="ph ph-medal text-3xl text-stz-green"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3">Marcas que a Oficina Respeita</h3>
+                    <p class="text-gray-600 text-center text-sm leading-relaxed">
+                        Não trabalhamos com "bicicletas de brinquedo". Temos parcerias com First, Viking, GTA, Absolute e Shimano. Peças fáceis de achar e durabilidade comprovada.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="categorias" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-black text-center text-gray-900 mb-12">QUAL O SEU PRÓXIMO DESTINO?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-80">
+                    <img src="https://i.ibb.co/3yQLjF9L/1.png" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="MTB">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-bold mb-1">MTB & Performance</h3>
+                        <p class="text-gray-300 text-xs mb-4">Freios Hidráulico e Suspensão Com Trava.</p>
+                        <a href="https://wa.me/5516997904123?text=Gostaria%20de%20ver%20op%C3%A7%C3%B5es%20de%20MTB" class="text-stz-green font-bold text-sm uppercase tracking-wide group-hover:underline">Ver Opções →</a>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-80">
+                    <img src="https://i.ibb.co/kszT31F4/2.webp" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Urbana">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-bold mb-1">Urbana & Passeio</h3>
+                        <p class="text-gray-300 text-xs mb-4">Conforto, Selim Macio e Agilidade.</p>
+                        <a href="https://wa.me/5516997904123?text=Gostaria%20de%20ver%20op%C3%A7%C3%B5es%20Urbanas" class="text-stz-green font-bold text-sm uppercase tracking-wide group-hover:underline">Ver Opções →</a>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-80">
+                    <img src="https://i.ibb.co/jvtQnJJN/3.webp" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Infantil">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-bold mb-1">Infantil & Juvenil</h3>
+                        <p class="text-gray-300 text-xs mb-4">Segurança e tamanho certo.</p>
+                        <a href="https://wa.me/5516997904123?text=Gostaria%20de%20ver%20Bikes%20Infantis" class="text-stz-green font-bold text-sm uppercase tracking-wide group-hover:underline">Ver Bikes Infantis →</a>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-80">
+                    <img src="https://i.ibb.co/DHdsxg18/4.webp" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Peças">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-bold mb-1">Peças & Acessórios</h3>
+                        <p class="text-gray-300 text-xs mb-4">Capacetes, Luvas, Luzes e Upgrades.</p>
+                        <a href="https://wa.me/5516997904123?text=Estou%20procurando%20pe%C3%A7as%20e%20acess%C3%B3rios" class="text-stz-green font-bold text-sm uppercase tracking-wide group-hover:underline">Ver Acessórios →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="localizacao" class="bg-stz-dark text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12 max-w-6xl mx-auto">
+                
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-6">NÃO COMPRE ONLINE SE VOCÊ FOR DE SERTÃOZINHO!<br><span class="text-stz-green">FAÇA O TEST-RIDE HOJE.</span></h2>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        Uma bicicleta é como um sapato: Tem que calçar bem para entender! Pois nós realmente que entregamos em Altíssimo Nível de Qualidade, qualquer modelo de nossas Bicicletas. Venha tomar um café com a gente, teste a bicicleta na rua e sinta a diferença de uma Montagem Profissional.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <i class="ph-fill ph-map-pin text-stz-green text-2xl"></i>
+                            <div>
+                                <h4 class="font-bold text-white">Onde Estamos:</h4>
+                                <p class="text-gray-400 text-sm">Rua Washington Luis, 1503 - Centro, Sertãozinho.</p>
+                                <p class="text-xs text-gray-500">(Pertinho do Terminal Rodoviário)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="ph-fill ph-clock text-stz-green text-2xl"></i>
+                            <div>
+                                <h4 class="font-bold text-white">Horário de Atendimento:</h4>
+                                <p class="text-gray-400 text-sm">Seg - Sex: 08h às 18h | Sáb: 08h às 13h</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://maps.google.com/?q=Rua+Washington+Luis,+1503+-+Centro,+Sertãozinho" target="_blank" class="inline-block mt-8 border border-white/20 hover:bg-white hover:text-black text-white px-6 py-3 rounded transition text-sm font-semibold">
+                        <i class="ph ph-arrow-square-out mr-2"></i> Abrir no Google Maps
+                    </a>
+                </div>
+
+<div class="w-full md:w-1/2 h-64 md:h-80 bg-gray-800 rounded-xl overflow-hidden shadow-2xl relative">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.5126838382713!2d-47.9942654!3d-21.144415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b997034f55734d%3A0x77d61b3693e5066e!2sR.%20Washington%20Lu%C3%ADs%2C%201503%20-%20Centro%2C%20Sert%C3%A3ozinho%20-%20SP%2C%2014160-520!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr" 
+        class="w-full h-full border-0 grayscale-[20%] contrast-[1.1] opacity-90"
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    
+    <div class="absolute top-4 right-4 pointer-events-none">
+         <span class="bg-stz-green text-white px-3 py-1 text-xs rounded font-bold shadow-lg uppercase">📍 Localização Exata</span>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-800 mt-16 pt-8 text-center text-gray-600 text-xs">
+            <p>&copy; 2025 STZ BIKE. Todos os direitos reservados. Sertãozinho - SP.</p>
+        </div>
+    </section>
+
+    <div id="social-toast" class="social-toast">
+        <div class="bg-green-100 p-2 rounded-full">
+            <i class="ph-fill ph-shopping-bag text-stz-green text-xl"></i>
+        </div>
+        <div class="text-sm">
+            <p class="font-bold text-gray-800" id="toast-name">Ricardo</p>
+            <p class="text-xs text-gray-500" id="toast-action">de Sertãozinho acabou de comprar.</p>
+        </div>
+    </div>
+
+    <a href="https://wa.me/5516999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20tirar%20uma%20d%C3%BAvida..." target="_blank" id="mobile-sticky" class="mobile-sticky-btn">
+        <i class="ph-fill ph-whatsapp-logo text-2xl"></i>
+        FALAR COM VENDEDOR
+    </a>
+
+    <script>
+        // --- 1. CONFIGURAÇÃO DE CIDADE E PROVA SOCIAL LOCAL ---
+        const localNames = ["Ricardo", "Ana", "Carlos", "Fernanda", "João", "Beatriz", "Lucas", "Mariana","Flávio","Paulo","Heitor"];
+        const localPlaces = ["do Centro", "do Jd. Alvorada", "de Pontal", "de Barrinha", "do Jd. Recreio", "de Ribeirão Preto", "da Vila Industrial", "de Jardinópolis", "de Cruz das Posses", "de Dumont"];
+        const actions = ["acabou de comprar uma Bike.", "acabou de chamar um de nossos vendedores.","agendou uma revisão.", "comprou peças Shimano.", "aproveitou a oferta Aro 29.","adquiriu uma bike Infantil."];
+
+        function showToast() {
+            const toast = document.getElementById('social-toast');
+            const nameEl = document.getElementById('toast-name');
+            const actionEl = document.getElementById('toast-action');
+            
+            // Randomize Data
+            const name = localNames[Math.floor(Math.random() * localNames.length)];
+            const place = localPlaces[Math.floor(Math.random() * localPlaces.length)];
+            const action = actions[Math.floor(Math.random() * actions.length)];
+
+            nameEl.innerText = `${name} ${place}`;
+            actionEl.innerText = action;
+
+            // Show
+            toast.classList.add('active');
+            
+            // Hide after 6s
+            setTimeout(() => {
+                toast.classList.remove('active');
+            }, 6000);
+        }
+
+        // Loop social proof every 15-25 seconds
+        setInterval(() => {
+            showToast();
+        }, Math.random() * (25000 - 15000) + 15000);
+        
+        // Initial toast
+        setTimeout(showToast, 5000);
+
+        // --- 2. TIMER EVERGREEN (Reseta à meia noite) ---
+        function updateTimer() {
+            const now = new Date();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 999);
+            
+            const diff = endOfDay - now;
+            
+            const h = Math.floor(diff / 3600000);
+            const m = Math.floor((diff % 3600000) / 60000);
+            const s = Math.floor((diff % 60000) / 1000);
+            
+            document.getElementById('countdown-timer').innerText = 
+                `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+        }
+        setInterval(updateTimer, 1000);
+        updateTimer();
+
+        // --- 3. SCROLL REVEAL & STICKY BUTTON ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+        // Sticky Button Logic
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('mobile-sticky');
+            if (window.scrollY > 400) {
+                btn.classList.add('visible');
+            } else {
+                btn.classList.remove('visible');
+            }
+        });
+// Função VORTEX para Scroll Suave e Lento
+function smoothScrollTo(target) {
+    const element = document.querySelector(target);
+    const targetPosition = element.getBoundingClientRect().top + window.pageYOffset;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    const duration = 1500; // Tempo em milissegundos (1.5 segundos para ser bem elegante)
+    let start = null;
+
+    function step(timestamp) {
+        if (!start) start = timestamp;
+        const progress = timestamp - start;
+        const windowScrollY = easeInOutQuad(progress, startPosition, distance, duration);
+        window.scrollTo(0, windowScrollY);
+        if (progress < duration) window.requestAnimationFrame(step);
+    }
+
+    // Função matemática para aceleração e desaceleração suave (Easing)
+    function easeInOutQuad(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+
+    window.requestAnimationFrame(step);
+}
+    </script>
+</body>
+</html>
