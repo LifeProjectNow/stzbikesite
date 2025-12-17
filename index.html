@@ -89,27 +89,32 @@
 }
 /* Esconde no Desktop para não poluir o layout */
 @media(min-width: 768px) { .whatsapp-float { display: none; } }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden">
 
 <header class="bg-white shadow-sm sticky top-0 z-40">
-        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="https://i.ibb.co/W1KY703/LOGO-SITE-STZ.png" alt="STZ Bike Logo" class="h-10 md:h-16 w-auto object-contain">
+        <div class="container mx-auto px-2 md:px-4 py-3 flex justify-between items-center gap-2">
+            
+            <div class="flex-shrink-0">
+                <img src="https://i.ibb.co/W1KY703/LOGO-SITE-STZ.png" alt="STZ Bike Logo" class="h-8 md:h-14 w-auto object-contain">
             </div>
             
-            <nav class="hidden lg:flex gap-6 text-sm font-semibold text-gray-700">
-                <a href="#oferta" class="hover:text-stz-green transition">OFERTA RELÂMPAGO</a>
-                <a href="#garantia" class="hover:text-stz-green transition">PORQUE A STZ BIKE?</a>
-                <a href="#categorias" class="hover:text-stz-green transition">CATEGORIAS</a>
-                <a href="#localizacao" class="hover:text-stz-green transition">LOCALIZAÇÃO</a>
+            <nav class="flex items-center justify-center gap-2 md:gap-6 overflow-x-auto no-scrollbar py-1">
+                <a href="#oferta" class="text-[9px] md:text-xs lg:text-sm font-bold text-gray-700 hover:text-stz-green transition whitespace-nowrap uppercase">OFERTA</a>
+                <a href="#garantia" class="text-[9px] md:text-xs lg:text-sm font-bold text-gray-700 hover:text-stz-green transition whitespace-nowrap uppercase">POR QUE STZ?</a>
+                <a href="#categorias" class="text-[9px] md:text-xs lg:text-sm font-bold text-gray-700 hover:text-stz-green transition whitespace-nowrap uppercase">CATEGORIAS</a>
+                <a href="#localizacao" class="text-[9px] md:text-xs lg:text-sm font-bold text-gray-700 hover:text-stz-green transition whitespace-nowrap uppercase">LOCALIZAÇÃO</a>
             </nav>
 
-            <a href="https://wa.me/5516997904123?text=Ol%C3%A1!%20Eu%20vim%20pelo%20Google%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20bicicletas%20por%20gentileza..." target="_blank" class="bg-green-500 hover:bg-green-600 text-white p-2 md:px-5 md:py-2 rounded-full font-bold transition flex items-center gap-2 shadow-lg">
-                <i class="ph ph-whatsapp-logo text-xl"></i>
-                <span class="hidden md:inline text-xs">FALAR COM VENDEDOR</span>
-            </a>
+            <div class="flex-shrink-0">
+                <a href="https://wa.me/5516997904123?text=Ol%C3%A1!%20Eu%20vim%20pelo%20Google%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20bicicletas%20por%20gentileza..." target="_blank" class="bg-green-500 hover:bg-green-600 text-white p-2 md:px-4 md:py-2 rounded-full font-bold transition flex items-center gap-2 shadow-lg">
+                    <i class="ph ph-whatsapp-logo text-lg md:text-xl"></i>
+                    <span class="hidden lg:inline text-xs">FALAR COM VENDEDOR</span>
+                </a>
+            </div>
         </div>
     </header>
     <section class="relative bg-stz-dark text-white pt-12 pb-20 md:pt-24 md:pb-32 overflow-hidden">
@@ -123,10 +128,10 @@
                 📍 Exclusivo para moradores de Sertãozinho e Região
             </span>
             
-            <h1 class="text-2xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 reveal-on-scroll">
-                NÃO COMPRE <span class="text-stz-green">GATO POR LEBRE.</span><br>
-                A ÚNICA LOJA QUE ENTREGA SUA BIKE <span class="bg-stz-green text-white px-2 text-xl md:text-5xl">PRONTA PRA VOCÊ!</span>
-            </h1>
+<h1 class="text-[22px] sm:text-3xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 reveal-on-scroll">
+    <span class="whitespace-nowrap">NÃO COMPRE <span class="text-stz-green">GATO POR LEBRE</span></span><br>
+    <span class="text-xl md:text-5xl">A ÚNICA LOJA QUE ENTREGA SUA BIKE <span class="bg-stz-green text-white px-2">PRONTA PRA VOCÊ!</span></span>
+</h1>
             
             <p class="text-base md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed reveal-on-scroll">
                 Pare de arriscar seu dinheiro em bicicletas de internet. Na <strong>STZ BIKE</strong>, você economiza o mecânico e sai pedalando na hora.
