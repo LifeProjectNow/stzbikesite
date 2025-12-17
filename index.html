@@ -64,70 +64,86 @@
         }
         .social-toast.active { transform: translateX(0); }
 
-        /* Mobile Sticky Button */
-        .mobile-sticky-btn {
-            position: fixed; bottom: 0; left: 0; width: 100%; background: #25D366;
-            color: white; padding: 15px; text-align: center; font-weight: bold;
-            font-size: 1.1rem; z-index: 100; box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
-            transform: translateY(100%); transition: transform 0.3s ease;
-            display: flex; justify-content: center; align-items: center; gap: 8px;
-        }
-        .mobile-sticky-btn.visible { transform: translateY(0); }
-
-        @media(min-width: 768px) { .mobile-sticky-btn { display: none; } }
+/* COLE ISTO: WhatsApp Flutuante Mobile Redondo */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50%;
+    box-shadow: 2px 5px 15px rgba(0,0,0,0.3);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.whatsapp-float.visible {
+    visibility: visible;
+    opacity: 1;
+}
+/* Esconde no Desktop para não poluir o layout */
+@media(min-width: 768px) { .whatsapp-float { display: none; } }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden">
 
-    <header class="bg-white shadow-sm sticky top-0 z-40">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <img src="https://i.ibb.co/W1KY703/LOGO-SITE-STZ.png" alt="STZ Bike Logo" class="h-12 md:h-16 w-auto object-contain">
+<header class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://i.ibb.co/W1KY703/LOGO-SITE-STZ.png" alt="STZ Bike Logo" class="h-10 md:h-16 w-auto object-contain">
             </div>
             
-            <nav class="hidden md:flex gap-6 text-sm font-semibold text-gray-700">
+            <nav class="hidden lg:flex gap-6 text-sm font-semibold text-gray-700">
                 <a href="#oferta" class="hover:text-stz-green transition">OFERTA RELÂMPAGO</a>
                 <a href="#garantia" class="hover:text-stz-green transition">PORQUE A STZ BIKE?</a>
                 <a href="#categorias" class="hover:text-stz-green transition">CATEGORIAS</a>
                 <a href="#localizacao" class="hover:text-stz-green transition">LOCALIZAÇÃO</a>
             </nav>
 
-            <a href="https://wa.me/5516997904123?text=Ol%C3%A1!%20Vim%20pelo%20Google%20e%20estou%20procurando%20uma%20bicicleta%20e%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20por%20gentileza..." target="_blank" class="hidden md:flex bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-bold transition items-center gap-2 shadow-lg">
+            <a href="https://wa.me/5516997904123?text=Ol%C3%A1!%20Eu%20vim%20pelo%20Google%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20bicicletas%20por%20gentileza..." target="_blank" class="bg-green-500 hover:bg-green-600 text-white p-2 md:px-5 md:py-2 rounded-full font-bold transition flex items-center gap-2 shadow-lg">
                 <i class="ph ph-whatsapp-logo text-xl"></i>
+                <span class="hidden md:inline text-xs">FALAR COM VENDEDOR</span>
             </a>
         </div>
     </header>
-
     <section class="relative bg-stz-dark text-white pt-12 pb-20 md:pt-24 md:pb-32 overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1576435728678-38d01d52e38b?q=80&w=1920&auto=format&fit=crop" alt="Ciclista em trilha" class="w-full h-full object-cover opacity-30">
             <div class="absolute inset-0 bg-gradient-to-b from-stz-dark/90 via-stz-dark/70 to-gray-50/100"></div>
         </div>
 
-        <div class="container mx-auto px-4 relative z-10 text-center max-w-4xl">
-            <span class="inline-block py-1 px-3 rounded-full bg-stz-green/20 border border-stz-green text-stz-green font-bold text-xs md:text-sm mb-6 tracking-wide uppercase">
+<div class="container mx-auto px-4 relative z-10 text-center max-w-4xl">
+            <span class="inline-block py-1 px-3 rounded-full bg-stz-green/20 border border-stz-green text-stz-green font-bold text-[10px] md:text-sm mb-6 tracking-wide uppercase">
                 📍 Exclusivo para moradores de Sertãozinho e Região
             </span>
             
-            <h1 class="text-3xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 reveal-on-scroll">
+            <h1 class="text-2xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 reveal-on-scroll">
                 NÃO COMPRE <span class="text-stz-green">GATO POR LEBRE.</span><br>
-                A ÚNICA LOJA QUE ENTREGA SUA BIKE <span class="bg-stz-green text-white px-2">PRONTA PRA SEU DESEJO E NECESSIDADE!</span>
+                A ÚNICA LOJA QUE ENTREGA SUA BIKE <span class="bg-stz-green text-white px-2 text-xl md:text-5xl">PRONTA PRA VOCÊ!</span>
             </h1>
             
-            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed reveal-on-scroll">
-                Pare de arriscar seu dinheiro em bicicletas de internet que chegam desmontadas na caixa e sem garantia real. Na <strong>STZ BIKE</strong>, você economiza o mecânico, tem garantia de balcão e sai pedalando na hora.
+            <p class="text-base md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed reveal-on-scroll">
+                Pare de arriscar seu dinheiro em bicicletas de internet. Na <strong>STZ BIKE</strong>, você economiza o mecânico e sai pedalando na hora.
             </p>
             
-<div class="flex flex-col md:flex-row justify-center gap-4 reveal-on-scroll">
-    <a href="javascript:void(0)" onclick="smoothScrollTo('#oferta')" class="bg-urgent-red hover:bg-red-700 text-white text-lg md:text-xl font-bold py-4 px-8 rounded-lg shadow-2xl transition transform hover:scale-105 pulse-urgent flex items-center justify-center gap-3">
-        🔴 QUERO VER AS BICICLETAS AGORA
-    </a>
-</div>
-<p class="mt-4 text-sm text-gray-900 font-bold flex items-center justify-center gap-2">
-    <span><i class="ph-fill ph-check-circle text-green-600"></i> Garantia de Montagem Grátis</span>
-    <span class="text-gray-300">•</span>
-    <span><i class="ph-fill ph-check-circle text-green-600"></i> Loja Física no Centro</span>
-</p>  
+            <div class="flex justify-center reveal-on-scroll">
+                <a href="javascript:void(0)" onclick="smoothScrollTo('#oferta')" class="bg-urgent-red hover:bg-red-700 text-white text-[13px] md:text-xl font-bold py-3 px-5 md:py-4 md:px-8 rounded-lg shadow-2xl transition transform hover:scale-105 pulse-urgent flex items-center justify-center gap-2">
+                    🔴 QUERO VER AS BICICLETAS AGORA
+                </a>
+            </div>
+
+            <p class="mt-6 text-[11px] md:text-sm text-gray-900 font-bold flex flex-wrap items-center justify-center gap-2">
+                <span><i class="ph-fill ph-check-circle text-green-600"></i> Montagem Grátis</span>
+                <span class="text-gray-300">•</span>
+                <span><i class="ph-fill ph-check-circle text-green-600"></i> Loja Física no Centro</span>
+            </p>  
+        </div>
 </section>
 
 <section id="oferta" class="py-16 bg-white -mt-10 relative z-20 rounded-t-3xl border-t border-gray-200">
@@ -337,10 +353,9 @@
         </div>
     </div>
 
-    <a href="https://wa.me/5516999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20tirar%20uma%20d%C3%BAvida..." target="_blank" id="mobile-sticky" class="mobile-sticky-btn">
-        <i class="ph-fill ph-whatsapp-logo text-2xl"></i>
-        FALAR COM VENDEDOR
-    </a>
+<a href="https://wa.me/5516997904123?text=Ol%C3%A1!%20Eu%20vim%20pelo%20Google%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20bicicletas%20por%20gentileza..." target="_blank" id="mobile-sticky" class="whatsapp-float">
+    <i class="ph-fill ph-whatsapp-logo text-3xl"></i>
+</a>
 
     <script>
         // --- 1. CONFIGURAÇÃO DE CIDADE E PROVA SOCIAL LOCAL ---
